@@ -7,13 +7,6 @@ Demo App with basic REST API.
 
 ### REST-api
 
-List of basic routes:
-
-
-| Routes                | HTTP          | Description          |
-| ---------------------:|:-------------:| --------------------:|
-| /api/hello?name={name}| GET           | Print hello,{name}!  |
-
 List of user routes:
 
 | Routes                | HTTP          | Description                             |
@@ -28,14 +21,6 @@ List of user routes:
 | /api/users/:id        | DELETE        |    Delete a user (admin only)           |
 | /api/users/:id        | PUT           |    Update a user with new info (admin   |
 |                       |               |    and authenticated user               |
-
-List of filter routes:
-
-| Routes                   | HTTP          | Description                             |
-| ------------------------:|:-------------:| ---------------------------------------:|
-| /api/users?name="{name}" | GET           |    Get {name} match in users            |
-| /api/users/:id           | GET           |    Get {na} like in users               |
-
 
 Usage
 
