@@ -2,12 +2,10 @@ const jwt = require('jsonwebtoken');
 
 module.exports = {
     auth: (req, res, next) => {
-        // console.log(req.headers);
         let token = req.headers.token
         let decoded = jwt.verify(token, 'iloveyou');
-        // console.log(decoded);
         if (token) {
-            next()
+            next();
         }else {
             res.status(401).json({message: 'you are not authorized!'})
         }
